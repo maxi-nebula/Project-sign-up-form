@@ -7,5 +7,66 @@
     <link rel="stylesheet" href="./signup.css" />
     <title>Sign-up!</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div>
+        <img
+          src="./sign-up-images/mars.jpg"
+          alt="image_of_an_galaxy"
+          class="image_galaxy"
+          id="image_galaxy"
+        />
+      </div>
+
+      <div class="text_section" id="section2A">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+            reprehenderit voluptatum quidem asperiores fuga voluptate, at
+            corporis reiciendis dolor, ex provident labore temporibus
+            perspiciatis neque commodi eum veritatis consectetur ipsa!
+          </p>
+          <p>you know you want to.</p>
+        </div>
+      </div>
+      <div>
+        <div class="details_section" id="section2B">
+          <p>lets do it</p>
+          <div>
+            <label for="first_name">FIRST NAME</label>
+            <label for="last_name">LAST NAME</label>
+            <div>
+              <input type="text" id="first_name" name="first_name" required />
+              <input type="text" id="last_name" name="last_name" required />
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="email">EMAIL</label>
+              <label for="phone_number">PHONE NUMBER</label>
+              <div>
+                <input type="email" name="email" />
+                <input type="number" name="phone_number" />
+              </div>
+            </div>
+            <div>
+              <label for="password">PASSWORD</label>
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+
+              <div>
+                <input type="password" name="password" />
+                <input type="password" name="confirm_password" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login_section" id="login_section">
+          <button type="submit">Create Account</button>
+          <div class="question_section">
+            <span id="question">Already have an account? Log in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

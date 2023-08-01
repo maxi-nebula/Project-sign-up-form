@@ -1,0 +1,96 @@
+/** @format */
+@font-face {
+  font-family: "soothingfont";
+  src: url(./sign-up-fonts/TenorSans-Regular.ttf);
+}
+img {
+  height: 100vh;
+  width: 700px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "soothingfont";
+  font-size: 1rem;
+}
+.section_B {
+  /*background-color: rgb(233, 233, 172);*/
+  width: auto;
+  border: 1px solid red;
+}
+.text-section {
+  height: 100px;
+  font-weight: bolder;
+  padding: 30px;
+}
+.dothis-section {
+  display: flex;
+  justify-content: flex-start;
+
+  height: 30px;
+}
+.information-section {
+  display: flex;
+
+  height: 290px;
+
+  padding: 80px;
+}
+
+label,
+input {
+  display: flex;
+  padding: 10px;
+  /* background-color: rgb(233, 233, 172);*/
+  justify-content: flex-start;
+  vertical-align: baseline;
+
+  width: 190px;
+}
+label {
+  display: flex;
+  font-weight: bolder;
+  justify-content: flex-start;
+
+  font-size: 15px;
+  padding: 10px;
+}
+
+form,
+input {
+  box-sizing: border-box;
+
+  border-color: green;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;*/
+}
+.splash-image {
+  width: 200px;
+  height: 200px;
+}
+form {
+  display: flex;
+  justify-content: center;
+
+  width: 300px;
+}
+
+.button-section {
+  height: 200px;
+  height: auto;
+  padding: 30px;
+  font-weight: bolder;
+}
+
+button {
+  overflow: hidden;
+  background-color: rgb(17, 39, 17);
+  border-radius: 2px;
+  color: white;
+
+  width: 200px;
+  height: 40px;
+}
