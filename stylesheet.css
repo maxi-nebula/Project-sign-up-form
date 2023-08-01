@@ -9,28 +9,39 @@ img {
 }
 body {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "soothingfont";
-  font-size: 1rem;
 }
+
 .section_B {
-  /*background-color: rgb(233, 233, 172);*/
-  width: auto;
-  border: 1px solid red;
+  width: 750px;
+  font-size: 1.1rem;
+}
+.section_C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 500px;
 }
 .text-section {
   height: 100px;
-  font-weight: bolder;
+  width: 550px;
+  font-weight: 500;
   padding: 30px;
+  color: rgb(127, 129, 14);
 }
 .dothis-section {
   display: flex;
-  justify-content: flex-start;
-
+  font-weight: bolder;
+  font-size: larger;
+  color: purple;
+  padding: 30px;
   height: 30px;
 }
 .information-section {
   display: flex;
+  font-weight: bold;
 
   height: 290px;
 
@@ -40,36 +51,48 @@ body {
 label,
 input {
   display: flex;
-  padding: 10px;
-  /* background-color: rgb(233, 233, 172);*/
+  padding: 15px;
+
   justify-content: flex-start;
   vertical-align: baseline;
 
   width: 190px;
 }
+
 label {
   display: flex;
   font-weight: bolder;
   justify-content: flex-start;
 
   font-size: 15px;
-  padding: 10px;
+  padding: 15px;
 }
 
-form,
 input {
+  border: none;
   box-sizing: border-box;
+  border-bottom: 2px solid green;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  font-family: "soothingfont";
+  font-weight: bold;
+  font-size: large;
 
-  border-color: green;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
   /* -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;*/
 }
-.splash-image {
-  width: 200px;
-  height: 200px;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  width: 90%;
+  outline: none;
 }
 form {
   display: flex;
@@ -83,13 +106,38 @@ form {
   height: auto;
   padding: 30px;
   font-weight: bolder;
+  color: rgb(32, 9, 240);
+}
+#first-name,
+#last-name {
+  color: rgb(235, 68, 7);
+}
+#email,
+#phone-number {
+  color: magenta;
+}
+#password,
+#confirm-password {
+  color: lightseagreen;
 }
 
 button {
   overflow: hidden;
-  background-color: rgb(17, 39, 17);
+  font-weight: bolder;
+  cursor: pointer;
+
+  /* background-color: rgb(17, 39, 17);*/
+
+  /*background: linear-gradient(#e66465, #9198e5);*/
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
   border-radius: 2px;
-  color: white;
+  color: black;
 
   width: 200px;
   height: 40px;
