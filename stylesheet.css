@@ -85,7 +85,7 @@ input {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  transition: width 0.4s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 input[type="text"]:focus,
@@ -122,13 +122,13 @@ form {
 }
 
 button {
+  width: 200px;
+  height: 40px;
   overflow: hidden;
+  border-radius: 1px;
+  transition-duration: 0.4s;
   font-weight: bolder;
   cursor: pointer;
-
-  /* background-color: rgb(17, 39, 17);*/
-
-  /*background: linear-gradient(#e66465, #9198e5);*/
   background: linear-gradient(
       217deg,
       rgba(255, 0, 0, 0.8),
@@ -136,9 +136,39 @@ button {
     ),
     linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-  border-radius: 2px;
   color: black;
+}
 
-  width: 200px;
-  height: 40px;
+button:hover {
+  animation: shaking 0.5s infinite;
+}
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.password-error {
+  border-bottom: 3px solid red;
+}
+.error-message-before {
+  visibility: hidden;
+}
+
+.error-message-after {
+  color: crimson;
+  font-family: "soothingfont";
+  visibility: visible;
 }

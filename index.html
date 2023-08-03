@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheet.css" />
+    <script src="./signupform.js" defer></script>
     <title>sign-up</title>
   </head>
   <body>
@@ -21,28 +22,29 @@
       <div class="text-section" id="text-section">
         <p>
           This is not a real online service! you know you need something like
-          this in your life to help you realize your deepest dreams.
+          this to showcase your html form basics, css flex box and some
+          javascript skills.
         </p>
 
-        <p>you <i>know</i> you want to.</p>
+        <p>I <i>hope</i> this is okayish.</p>
       </div>
       <div><span class="dothis-section">Lets' color it !!!</span></div>
 
       <div>
         <div class="information-section" id="information-section">
-          <form action="">
+          <form action="" method="get">
             <div>
               <label for="first-name" id="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" />
+              <input type="text" name="first-name" required />
 
               <label for="email" id="email">EMAIL</label>
-              <input name="email" type="email" />
+              <input name="email" type="email" required />
               <label for="password" id="password">PASSWORD</label>
-              <input name="password" type="password" />
+              <input name="password" type="password" id="original" required />
             </div>
             <div>
               <label for="last-name" id="last-name">LAST NAME</label>
-              <input type="text" name="last-name" />
+              <input type="text" name="last-name" required />
 
               <label for="phone-number" id="phone-number">PHONE NUMBER</label>
               <input name="phone-number" type="text" />
@@ -50,13 +52,21 @@
               <label for="confirm-password" id="confirm-password"
                 >CONFIRM PASSWORD</label
               >
-              <input name="confirm-password" type="password" />
+              <input
+                name="confirm-password"
+                type="password"
+                id="confirm"
+                required
+              />
             </div>
           </form>
         </div>
+        <div class="error-message-before">
+          <span>Are you sure you typed the same password?</span>
+        </div>
 
         <div class="button-section" id="button-section">
-          <button type="submit">Create Account</button>
+          <button type="submit" id="submitbutton">Create Account</button>
 
           <p>Already have an account? Log in</p>
         </div>
